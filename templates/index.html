@@ -1,0 +1,16 @@
+{% from 'components.html' import card %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/style.css" />
+    
+    <title>Solution - YouTube App</title>
+  </head>
+  <body>
+    <div id='home'>
+    {% for video in filtereddata %}
+      {{ card(video) }}
+    {% endfor %}
+    </div>
+  </body>
+</html>
